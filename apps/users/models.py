@@ -33,7 +33,7 @@ class ApplicationForm(models.Model):
     city =  models.CharField(verbose_name=_("City"),max_length=100)
     state =  models.CharField(verbose_name=_("State"), max_length=100, blank=True)
     postCode = models.IntegerField(verbose_name=("Post code / Zip code"), max_length=5)
-    form_date = models.DateField(verbose_name=_("Form Date"),max_length=100)
+    #form_date = models.DateField(verbose_name=_("Form Date"),max_length=100, blank=True)
     dateOFBirth = models.DateField(verbose_name=_("Date OF Birth"), max_length=100)
     socialSecurityNumber = models.CharField(verbose_name=_("Martial Status"),max_length=70)
 
