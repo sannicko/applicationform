@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block mainContent %}
+{% block navBar %}
+	{% include "includes/navbar.html" %}
+
+	{% endblock %}
+	<div class='container'>
+        <div class="col-md-4" id="signature">
+            {{employeeForm.user_signature}}
+        </div>
+
+     </div>
+{% endblock %}
+
+{% block extraJs %}
+ <script type="text/javascript" src="{% static 'js/jSignature.js' %}"></script>
+<script>
+$(document).ready(function() {
+  $(".jsign-container").each(function(){
+    var config = $(this).data('config');
+    var value = $(this).data('initial-value');
+    $(this).jSignature(config);
+    $(this).jSignature("setData", value, "native");
+  });
+
+  /* Each time user is done drawing a stroke, update value of hidden input */
+  $(".jsign-container").on("change", function(e) {
+    var jSignature_data = $(this).jSignature('getData', 'native');
+    var django_field_name = $(this).attr('id').split(/_(.+)/)[1];
+    $('#id_' + django_field_name).val(JSON.stringify(jSignature_data));
+  });
+
+  /* Bind clear button */
+  $(".jsign-wrapper input").on("click", function(e) {
+    $(this).siblings('.jsign-container').jSignature('reset');
+  });
+    $("#jsign_user_signature").css({'border-bottom':'solid'});
+});
+</script>
+{% endblock %}

@@ -1,0 +1,480 @@
+{% load staticfiles %}
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>MARCOS A. LOPEZ M. Questonnaire and Hire Documents.pdf</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:.15pt;
+	margin-bottom:4.25pt;
+	margin-left:-.25pt;
+	text-indent:-.5pt;
+	line-height:133%;
+	font-size:8.5pt;
+	font-family:"Arial","sans-serif";
+	color:black;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:29.35pt 95.5pt 50.2pt 95.35pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=625
+ style='width:469.05pt;border-collapse:collapse'>
+ <tr style='height:10.9pt'>
+  <td width=423 valign=top style='width:316.9pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'><b>Worker Information Questionnaire</b></p>
+  </td>
+  <td width=203 valign=top style='width:152.15pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+  <p class=MsoNormal align=right style='margin:0cm;margin-bottom:.0001pt;
+  text-align:right;text-indent:0cm;line-height:115%'><b>Date of Questionnaire:
+  {{ mylist.agreement_signed_date }}</b></p>
+  </td>
+ </tr>
+ <tr style='height:10.9pt'>
+  <td width=423 valign=top style='width:316.9pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'><b>{{ mylist.first_name }} {{ mylist.last_name }}</b></p>
+  </td>
+  <td width=203 valign=top style='width:152.15pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+      <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'><b>  Worker Identifier Number: {{ mylist.first_name|slice:'1' }}{{ mylist.last_name|slice:'1' }}{{ mylist.socialSecurityNumber|slice:'-4:' }}</b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.4pt;
+margin-left:0cm;text-indent:0cm;line-height:normal; border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1467" src="/media/Upload_documents/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>First Name, Last Name:       </b>{{ mylist.first_name }}, {{ mylist.last_name }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Home Address: {{ mylist.home_address1 }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Street, Apartment, City, State,
+Zip Code:          , APT. C, {{ mylist.city }}, {{ mylist.state }}, {{ mylist.postCode }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Cellular Phone: {{ mylist.phoneNumber }}           E-mail Address: {{ mylist.email }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Date of Birth:          {{ mylist.dateOFBirth }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Social Security Number or Tax
+Identification Number:       {{ mylist.socialSecurityNumber }}</p>
+
+<p class=MsoNormal style='line-height:normal'>Marital Status: {% if mylist.Martial_status == 'S' %}Single{% elif mylist.Martial_status == 'M' %}Married{% endif %}</p>
+
+<p class=MsoNormal style='line-height:normal'>Number of Dependents:        {{ mylist.no_of_dependents }}</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.4pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=573 height=4
+id="Group 1468" src="/media/Upload_documents/image002.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>Emergency Contact</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:106.85pt;margin-bottom:
+12.05pt;margin-left:-.25pt'>Name: {{ mylist.emergency_contact_firstName }} {{ mylist.emergency_contact_lastName }} Relationship: {{ mylist.emergency_contact_relation }} Cellular:
+{{ mylist.emergency_contact_phoneNumber }} E-Mail:</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1469" src="/media/Upload_documents/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>Job Positions - I state that I
+currently have experience in the following job worker positions:</b></p>
+
+<p class=MsoNormal style='line-height:normal'>{% if mylist.ceiling_mechanic %}<span style="padding-right: 500px">Acoustical Ceiling Mechanic</span> {% endif %} {% if mylist.drywall_finisher %}Drywall{% endif %}
+{% if mylist.framing_mechanic %}Metal Framing Mechanic{% endif %} {% if mylist.drywall_hanger %}Drywall Hanger {% endif %}</p><br>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1470" src="/media/Upload_documents/image004.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>Job Skills - I state that I
+currently have experience in the following job skills: </b></p>
+<p class=MsoNormal style='line-height:normal'>
+    {% if mylist.is_ladder_user %}Use of a ladder {% endif %} {% if mylist.is_wheelbrrow_user %}Use of a wheelbarrow {% endif %}
+    {% if mylist.is_general_hand_tools %}Use of general hand tools: {% endif %} {% if mylist.is_walking_slits %}Use of walking stilts {% endif %}
+    {% if mylist.is_electric_screw_gun %}Use of an electric screw gun: {% endif %} {% if mylist.is_electric_chop_saw %}Use of an electric chop miter saw {% endif %} {% if mylist.is_power_nail_gun %}Use of power actuated tool (hilti - ramset): {% endif %}
+    {% if mylist.is_wallboard_hoist %}Use of wallboard hoist: {% endif %} {% if mylist.is_scissor_lift %}Use of scissor Lift {% endif %}
+    {% if mylist.is_boom_lift %}Boom Lift Use Certificate / Pluma Lift {% endif %} {% if mylist.is_bucket_truck_lift %}Use of bucket truck lift {% endif %}
+    {% if mylist.is_new_skill %}Willing to learn new skills as an apprentice {% endif %}
+</p><br>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1471" src="/media/Upload_documents/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+0cm;margin-left:-.25pt;margin-bottom:.0001pt;line-height:normal'><b>Skill
+Certifications - I state that I currently have the following Certifications:</b></p>
+<p class=MsoNormal style='line-height:normal'>
+    {% if mylist.is_osha10 %}OSHA 10 Certification {% endif %} {% if mylist.is_osha30 %}OSHA 30 Certification {% endif %}
+    {% if mylist.is_osha_training_manager %}OSHA Training Manager Certification {% endif %} {% if mylist.is_power_tool_certified %}Power Tools Certifications / Herramientas de Corriente {% endif %}
+    {% if mylist.is_hiltl %}HILTI Certification {% endif %} {% if mylist.is_ladder_user_certified %}Ladder User Certification / Escalera {% endif %} {% if mylist.is_scissor_lift_certified %}Scissor Lift Use Certificate / Tijera Lift {% endif %}
+    {% if mylist.is_broom_lift_certified %}Boom Lift Use Certificate / Pluma Lift {% endif %}
+</p><br>
+
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
+margin-left:0cm;text-indent:0cm;line-height:115%;border-bottom: solid black 1px;'><span style='font-size:11.0pt;
+line-height:115%;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1577" src="/media/Upload_documents/image001.gif"></span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=574
+ style='width:430.25pt;border-collapse:collapse'>
+ <tr style='height:10.9pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Have you ever been convicted of or pleaded no contest to a
+  felony within the last five years?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:10.9pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.convicted_or_not == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Are you able to provide proof of work eligibility in the
+  United States?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.work_eligible_usa == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Are you able to provide your domicile address for the last
+  5 years?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.domicile_address == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>If you are under 18, do you have an employment certificate?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>-</p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Have you ever been involved in a lawsuit with any previous
+  employer?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:13.35pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.law_suite == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+ <tr style='height:18.65pt'>
+  <td width=551 valign=top style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:18.65pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Have you ever been involved in a Workers Compensation
+  Claim?</p>
+  </td>
+  <td width=23 valign=top style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:18.65pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.compensation_claim == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+ <tr style='height:16.25pt'>
+  <td width=551 valign=bottom style='width:413.35pt;padding:0cm 0cm 0cm 0cm;
+  height:16.25pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;
+  line-height:115%'>Are you willing to travel if there are qualified work
+  positions is in another city or state?</p>
+  </td>
+  <td width=23 valign=bottom style='width:16.95pt;padding:0cm 0cm 0cm 0cm;
+  height:16.25pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt;text-align:justify;
+  text-justify:inter-ideograph;text-indent:0cm;line-height:115%'>{% if mylist.other_city == 'N' %}NO{% else %}YES{% endif %}</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:26.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=572 height=3
+id="Group 1578" src="/media/Upload_documents/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt'><b>Terms and Conditions When submitting this
+questionnaire and clicking your consent below, you agree to the following terms
+and conditions:</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:16.0pt;text-indent:-16.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I certify that all of the statements made in this questionnaire are made
+in good faith and these statements are true and correct to the best of my
+knowledge. / Certifico que todas las declaraciones hechas en este cuestionario
+se hacen de buena fe y estas declaraciones son verdaderas y correctas al mejor
+de mi conocimiento.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:16.0pt;text-indent:-16.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I understand that this questionnaire does not assure me of employment.
+Additionally, this questionnaire in no way obligates to hire me. If I am
+employed, I acknowledge that my employment, as an employee or independent
+contractor, will be an employment at will and that no specified time of
+employment is promised or implied. The company and I may terminate the
+relationship at will, at any time, so long as there is no violation of
+applicable federal, state laws, or contract rules. I further understand that
+this application does not constitute an agreement or contract for employment. I
+understand that if hired I may be charged up to $2.25 per week for check
+delivery and administration. / Entiendo que mi cuestionario no me asegura
+empleo. Además, este cuestionario de ninguna manera obliga a la compania contratarme.
+Si soy empleado, reconozco que mi empleo, como empleado o contratista
+independiente, será un empleo a voluntad y que el tiempo especificado no se
+promete. La compania puede terminar la relación, en cualquier momento, siempre
+y cuando no haya una violación de las reglas de las leyes federales, estatales
+, o de contratos aplicables. Además, entiendo que esta cuestionario no
+constituye un acuerdo o contrato de trabajo. Entiendo que si me contratan, me
+pueden cobrar hasta $ 2.25 por semana por entrega y administración de cheques.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:16.0pt;text-indent:-16.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I understand that any misleading or incorrect statements or failure to
+complete any part of this questionnaire not prohibited by law may render this
+questionnaire void and would be a cause for immediate dismissal. / Entiendo que
+cualquier declaración engañosa o incorrecta usada para completar cualquier
+parte de esta cuestionario, que no esté prohibido por la ley pueden hacer que
+este vacía el cuestionario y sería un motivo de despido inmediato.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:0cm;
+margin-left:16.0pt;margin-bottom:.0001pt;text-indent:-16.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>I understand
+that the information provided in the information in the questionnaire will be
+retained for a period of one year following the date of submission. Where
+necessary, the company may require additional information or complete a new
+questionnaire to remain in consideration of employment after that time. /
+Entiendo que la información proporcionada en esta cuestionario se mantendrá por
+un período de un año, siguientes a la fecha de presentación. Cuando sea
+necesario, la empresa puede requerir información adicional o un cuestionario
+nuevo de permanencia en razón de un empleo después de ese tiempo.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:16.0pt;text-indent:-16.0pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I provide permission to the company and all of the company’s agents
+and/or vendors the right to investigate all of the information provided as part
+of the questionnaire process, as well as, their requirements to secure
+additional information, if necessary. I further understand that this includes,
+but is not limited to, such activities as contacting my references or previous
+employers, employment screening, and conducting other employee background checking
+to verify my credential as a suitable independent contractor and/or employee
+for the company. I hereby release from all liability or responsibility all
+persons, companies, corporations, when furnishing such information. / Doy
+permiso a la compania y todos los agentes de la empresa y/o proveedores el
+derecho de investigar toda la información proporcionada en el marco del proceso
+del cuestionario, así como, los requisitos para asegurar la información
+adicional, si es necesario. Además, entiendo que esto incluye, pero no está
+limitado a, actividades tales como ponerse en contacto con mis referencias o
+empleadores anteriores, la investigación del empleo, y la realización de otros
+antecedentes de los empleadores para verificar mi credencial como contratista
+independiente y/o empleado de la compañía. Yo libero de toda responsabilidad
+todas las personas, empresas, corporaciones, cuando SUMINISTREN dicha
+información.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:9.4pt;
+margin-left:16.0pt;text-indent:-16.0pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span><b>I understand that as an employee or independent contractor, I must be
+capable of the following essential functions and that I am qualified and
+capable to perform the functions required. / Entiendo que como un empleado o
+contratista independiente, debo ser capaz de realizar las siguientes funciones
+esenciales y que estoy cualificado y capacitado para llevar a cabo las
+funciones necesarias.</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:9.4pt;
+margin-left:32.0pt;text-indent:-16.0pt'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I understand that as an employee or independent contractor, I must be
+capable of the following essential functions and that I am qualified and
+capable to perform the functions required. / Entiendo que como un empleado o
+contratista independiente, debo ser capaz de realizar las siguientes funciones
+esenciales y que estoy cualificado y capacitado para llevar a cabo las
+funciones necesarias.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:9.4pt;
+margin-left:32.0pt;text-indent:-16.0pt'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>This may require bending, stretching, and physical use of muscles during
+walking, transportations, or general duties. / Esto puede requerir la flexión,
+estiramiento y uso físico de los músculos durante lamarcha, los medios de
+transporte, o de funciones generales.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:32.0pt;text-indent:-16.0pt'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Available to work mornings, afternoons, evenings and overnights as described
+on project of my choosing. / Disponible para trabajar mañanas, tardes , noches
+y madrugadas, como se describe en el proyecto de mi elección.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:.15pt;margin-bottom:12.05pt;
+margin-left:16.0pt;text-indent:-16.0pt'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>I understand that an automatic dialing system may be used to deliver
+text messages updates and that charges for text messages may appear on my
+mobile phone bill. I give consent to use an automatic dialing system to deliver
+text messages to the telephone or cell phone number to which I have provided to
+transmit these text messages. / Entiendo que un sistema de marcado automático
+puede utilizarse para entregar actualizaciones de mensajes de texto y que los
+cargos por mensajes de texto pueden aparecer en mi factura de teléfono móvil.
+Doy mi consentimiento para utilizar un sistema de marcación automática para
+enviar mensajes de texto al teléfono o número de teléfono celular al que he
+previsto para transmitir estos mensajes de texto.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+14.75pt;margin-left:-.25pt'><b>In consideration, the Company hires the
+Applicant on the following terms and conditions. / En la consideración, si la
+empresa emplea al applicante en los siguientes términos y condiciones.</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>Termination of Agreement /
+Terminacion de Contracto.</b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Without
+cause, the Company may terminate this agreement at any time upon (0) days'
+written/verbal notice to the Employee. Without cause, the Employee may
+terminate employment upon (0) days' written/ verbal notice to the Company. 
+/Sin causa, la compañía puede terminar este acuerdo en cualquier momento
+mediante notificación por escrito/verbal (0) días al empleado. Sin causa, el
+empleado puede rescindir el contrato mediante notificación por escrito / verbal
+(0) días a la empresa.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+4.45pt;margin-left:-.25pt;line-height:normal'><b>Oral Modifications Not Binding
+/ Modificaciones Orales No Vinculantes.</b></p>
+
+<p class=MsoNormal style='margin-bottom:17.4pt'>This instrument is the entire
+agreement of the Company and the Employee. Oral changes have no effect. It may
+be altered only by a written agreement signed by the party against whom
+enforecement of any waiver, change, modification, extension, or discharge is
+sought. / Este instrumento es el acuerdo completo de la empresa y el empleado.
+Cambios orales no tienen efecto. Puede modificarse únicamente por un acuerdo
+escrito firmado por la parte contra quien se solicita enforecement de cualquier
+renuncia, cambio, modificación, extensión o descarga.</p>
+
+<p class=MsoNormal style='line-height:normal'>Este acuerdo es firmado día de /
+THIS AGREEMENT is signed this                {{ mylist.agreement_signed_date }}</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.1pt;
+margin-left:253.35pt;text-indent:0cm;line-height:normal'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img width=149
+height=3 id="Group 1798" src="/media/Upload_documents/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><b><span style='font-size:
+11.5pt'>{{ mylist.first_name }} {{ mylist.last_name }}</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'><span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=323 height=3
+id="Group 1799" src="/media/Upload_documents/image004.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:41.6pt'>Printed Name of the Employee /
+Nombre del Empleado.</p>
+
+
+
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:2.1pt;
+margin-left:0cm;text-indent:0cm;line-height:normal;border-bottom: solid black 1px;'>
+        <span style='position:relative;z-index:251658240;
+left:-4px;top:0px'><img
+src="/media/{{ mylist.signature }}"></span>
+    <span style='font-size:
+11.0pt;font-family:"Calibri","sans-serif"'><img width=323 height=3
+id="Group 1800" src="/media/Upload_documents/image004.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>Signature of the Employee / Firma del Empleado.
+    <br clear=all
+style='page-break-before:always'>
+</p>
+
+
+<p class=MsoNormal style='margin-bottom:7.55pt'>Copy of Driver License or
+Government issued Identification.
+<br clear=all
+style='page-break-before:always'></p>
+    <span style='position:relative;z-index:251658240;
+left:-4px;top:0px;'><img
+src="/media/{{ mylist.driver_license }}"></span>
+
+<p class=MsoNormal style='margin-top:10.7pt;margin-right:0cm;margin-bottom:
+14.1pt;margin-left:0cm;text-align:justify;text-justify:inter-ideograph;
+text-indent:0cm;line-height:normal'>Copy of Social Security Card or Tax
+Identification number: {{ mylist.socialSecurityNumber }} <br clear=ALL>
+Copy of Certifications / Tools or Equipment Other Documents:</p>
+    <span style='position:relative;z-index:251658240;
+left:-4px;top:0px;'><img
+src="/media/{{ mylist.social_security_copy }}"></span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>Copy of Resume and Work History</p>
+
+</div>
+
+</body>
+
+</html>
